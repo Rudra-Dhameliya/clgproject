@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+
+<body>
+
+  <!-- Page number-1-->
+  <!-- here we are create nav-bar in this website -->
+
+  <header id="home">
+    <nav class="navbar navbar-expand-lg navbar-light bg-white px-5 border-bottom fixed-top">
+      <div class="container-fluid">
+        <a class="navbar-brand fs-1" href="#">Maruti<span class="text-warning m-2">Consultancy</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0 fs-4 text-center">
+            <li class="nav-item">
+              <a class="nav-link active text-warning" aria-current="page" href="#home">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item"></li>
+            <a class="nav-link" href="#services">Services</a>
+            </li>
+            <li class="nav-item"></li>
+            <a class="nav-link" href="#contact">Contact</a>
+            </li>
+            <li class="nav-item">
+              <a class="btn btn-warning me-2 login1" href="login.html">Login</a>
+            </li>
+            <li class="nav-item">
+              <a class="btn btn-secondary signup1" href="signup.html">Sign Up</a>
+            </li>
+
+            <li class="nav-item d-none" id="logoutItem">
+              <a class="btn btn-danger" href="#" onclick="logout()">Logout</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- after navbar we are create sider  -->
+
+    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+          aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+          aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+          aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active card">
+          <img src="card.jpeg" class="d-block" alt="...">
+          <div class="carousel-caption d-md-block">
+          </div>
+        </div>
+        <div class="carousel-item card">
+          <img src="idp copy.jpg" class="d-block" alt="...">
+          <div class="carousel-caption d-md-block">
+          </div>
+        </div>
+        <div class="carousel-item card">
+          <img src="4 in 1 copy.jpg" class="d-block" alt="...">
+          <div class="carousel-caption d-md-block">
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+  </header>
+
+
+
+  <!-- page number-2 -->
+
+  <!-- in page 2 we are create about us section -->
+  <section class="about my-5" id="about">
+    <div class="container">
+      <div class=" text-center my-5">
+        <h1 data-aos="zoom-out-up" data-aos-offset="200">About<span class="text-warning"> us</span></h1>
+        <hr class="w-25 m-auto">
+      </div>
+      <div class="row">
+        <div class="cal-sm-12 col-md-6 col-lg-6 col-12" data-aos="zoom-in" data-aos-offset="200">
+          <h1>What do you<span class="text-warning"> want to know?</span></h1>
+
+          <p class="p-2">
+            My Name is Rudra Dhameliya and this website is About my work as Maruti Consultancy. I am providing many
+            Services that mentioned Below
+          </p>
+
+          <button type="button" class="btn btn-light mb-5">Apply Now</button>
+
+
+          <div class="accordion" id="accordionExample" data-aos="zoom-in-left" data-aos-offset="200">
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingOne">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
+                  aria-expanded="true" aria-controls="collapseOne">
+                  Why Should You Choose us?
+                </button>
+              </h2>
+              <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <strong>Very Fast and 100% legal work</strong>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingTwo">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                  How Can you Contact Us?
+                </button>
+              </h2>
+              <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <strong>You can Contact Us as of Below </strong> <br> Phone no: +91 9726599666
+                  <br>rudradhameliya007@gmail.com
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+        <!-- here side image of the about us -->
+        <div class="cal-sm-12 col-md-6 col-lg-6 col-12 m-auto text-end " data-aos="fade-right" data-aos-offset="200">
+          <img src="card.jpeg" class="img-fluid img-thumbnail">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- page number-3 -->
+  <section class="services py-5 bg-light" id="services">
+    <div class="container">
+      <div class=" text-center my-5">
+        <h1>Our<span class="text-warning"> Services</span></h1>
+        <hr class="w-25 m-auto">
+      </div>
+    </div>
+
+    <div class="row px-5" data-aos="zoom-in-up" data-aos-offset="200">
+      <div class="col-sm-12 col-md-4 col-lg-4 col-12">
+        <div class="card">
+          <div class="card-body">
+            <i class="fa fa-users bg-warning p-2 text-white rounded"></i>
+            <h5 class="card-title textsize">Pan Card</h5>
+            <p class="card-text">
+            <p class="textsize">Passport Size Photo - 2</p>
+            <p class="textsize">Aadhar Card</p>
+            <p class="textsize">Light bill</p>
+            </p>
+            <a href="#contact" class="btn btn-warning">Contact Now</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-12 col-md-4 col-lg-4 col-12">
+        <div class="card bg-warning text-white">
+          <div class="card-body">
+            <i class="fa fa-code bg-white p-2 text-dark rounded mb-2"></i>
+            <h5 class="card-title textsize1">Insurance</h5>
+            <p class="card-text">
+            <p class="textsize1">RC Book</p>
+            <p class="textsize1">Pan Card</p>
+            <p class="textsize1">Aadhar Card</p>
+            <p class="textsize1">Mobile Number / Email ID </p>
+            </p>
+            <a href="#contact" class="btn btn-light">Contact Now</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-12 col-md-4 col-lg-4 col-12">
+        <div class="card">
+          <div class="card-body">
+            <i class="fa fa-users bg-warning p-2 text-white rounded"></i>
+            <h5 class="card-title textsize">Election Card</h5>
+            <p class="card-text">
+            <p class="textsize">Passport Size Photo - 2</p>
+            <p class="textsize">Aadhar Card</p>
+            <p class="textsize">Famil member's election Card</p>
+            </p>
+            <a href="#contact" class="btn btn-warning">Contact Now</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row px-5 mt-5" data-aos="zoom-in-down" data-aos-offset="200">
+      <div class="col-sm-12 col-md-4 col-lg-4 col-12">
+        <div class="card">
+          <div class="card-body">
+            <i class="fa fa-users bg-warning p-2 text-white rounded"></i>
+            <h5 class="card-title textsize">Driving Licence</h5>
+            <p class="card-text">
+            <p class="textsize">Passport Size Photo</p>
+            <p class="textsize">Aadhar Card</p>
+            <p class="textsize">Signature</p>
+            </p>
+            <a href="#contact" class="btn btn-warning">Contact Now</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-12 col-md-4 col-lg-4 col-12">
+        <div class="card bg-warning text-white">
+          <div class="card-body">
+            <i class="fa fa-code bg-white p-2 text-dark rounded mb-2"></i>
+            <h5 class="card-title textsize1">RC BOOK</h5>
+            <p class="card-text">
+            <p class="textsize1">RC Book Name Transfer</p>
+            <p class="textsize1">RC Book Address Change</p>
+            <p class="textsize1">RC Book Renew</p>
+            <p class="textsize1">RC Book Loan Cancel</p>
+            </p>
+            <a href="#contact" class="btn btn-light">Contact Now</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-12 col-md-4 col-lg-4 col-12">
+        <div class="card">
+          <div class="card-body">
+            <i class="fa fa-users bg-warning p-2 text-white rounded"></i>
+            <h5 class="card-title textsize">Light Bill Name Transfer</h5>
+            <p class="card-text">
+            <p class="textsize2">Vechan Dastavej</p>
+            <p class="textsize2">Light bill</p>
+            <p class="textsize2">Vera bill</p>
+            <p class="textsize2">Aadhar Card</p>
+            <p class="textsize2">Passport Size Photo</p>
+            <p class="textsize2">Signature</p>
+            </p>
+            <a href="#contact" class="btn btn-warning">Contact Now</a>
+          </div>
+        </div>
+      </div>
+      <div class="row px-9 mt-5" data-aos="zoom-in-up" data-aos-offset="200">
+        <div class="col-sm-12 col-md-4 col-lg-4 col-12">
+          <div class="card">
+            <div class="card-body">
+              <i class="fa fa-users bg-warning p-2 text-white rounded"></i>
+              <h5 class="card-title textsize">Vera Bill Name Transfer</h5>
+              <p class="card-text">
+              <p class="textsize1">Vechan Dastavej</p>
+              <p class="textsize1">Light bill</p>
+              <p class="textsize1">Vera bill</p>
+              <p class="textsize1">Buyer's Aadhar Card</p>
+              <p class="textsize1">Seller's Aadhar Card</p>
+              </p>
+              <a href="#contact" class="btn btn-warning">Contact Now</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-12 col-md-4 col-lg-4 col-12">
+          <div class="card bg-warning text-white">
+            <div class="card-body">
+              <i class="fa fa-code bg-white p-2 text-dark rounded mb-2"></i>
+              <h5 class="card-title textsize">Other SMC Work</h5>
+              <p class="card-text">
+              <p class="textsize">Marrige Certificate</p>
+              <p class="textsize">COurt Marrige</p>
+              <p class="textsize">Etc......</p><br><br>
+              </p>
+              <a href="#contact" class="btn btn-light">Contact Now</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+  </section>
+
+  <!-- page number-4 -->
+  <section class="concate py-5" id="contact">
+    <div class="container">
+      <div class=" text-center my-5">
+        <h1>Feel free<span class="text-warning"> to Connect</span></h1>
+        <hr class="w-25 m-auto">
+      </div>
+
+      <div class="row">
+        <div class="col-sm-12 col-md-6 col-lg-6 col-12" data-aos="fade-up-left" data-aos-offset="200">
+          <form class="row g-3">
+            <div class="col-md-6">
+              <label for="inputEmail4" class="form-label">Email</label>
+              <input type="email" class="form-control" id="inputEmail4">
+            </div>
+            <div class="col-md-6">
+              <label for="inputPassword4" class="form-label">Password</label>
+              <input type="password" class="form-control" id="inputPassword4">
+            </div>
+            <div class="col-12">
+              <label for="inputAddress" class="form-label">Address</label>
+              <input type="text" class="form-control" id="inputAddress" placeholder="1234, Society">
+            </div>
+            <div class="col-12">
+              <label for="inputAddress2" class="form-label">Address 2</label>
+              <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+            </div>
+            <div class="col-md-6">
+              <label for="inputCity" class="form-label">City</label>
+              <input type="text" class="form-control" id="inputCity">
+            </div>
+            <div class="col-md-4">
+              <label for="inputState" class="form-label">State</label>
+              <select id="inputState" class="form-select">
+                <option selected>Choose...</option>
+                <option> Gujarat</option>
+              </select>
+            </div>
+            <div class="col-md-2">
+              <label for="inputZip" class="form-label">Pincode</label>
+              <input type="text" class="form-control" id="inputZip">
+            </div>
+            <div class="col-12">
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="gridCheck">
+                <label class="form-check-label" for="gridCheck">
+                  Check me out
+                </label>
+              </div>
+            </div>
+            <div class="col-12">
+              <button type="submit" class="btn btn-warning"
+                onclick="window.open('https://wa.me/+9197265996666', '_blank')">Whatsapp</button>
+            </div>
+          </form>
+        </div>
+
+        <div class="col-sm-12 col-md-6 col-lg-6 col-12 m-auto text-end p-4 " data-aos="fade-up-right">
+          <img src="contact.webp" class="img-fluid img-thumbnail p-2">
+        </div>
+
+      </div>
+    </div>
+
+  </section>
+  <footer class="bg-dark text-white py-4">
+    <div class="container">
+      <div class="row">
+        <!-- About Section -->
+        <div class="col-md-4">
+          <h5>About Us</h5>
+          <p>My Name is Rudra Dhameliya and this website is About my work as Maruti Consultancy</p>
+        </div>
+        <!-- Quick Links Section -->
+        <div class="col-md-4">
+          <h5>Quick Links</h5>
+          <ul class="list-unstyled">
+            <li><a href="#home" class="text-white">Home</a></li>
+            <li><a href="#about" class="text-white">About</a></li>
+            <li><a href="#services" class="text-white">Services</a></li>
+            <li><a href="#contact" class="text-white">Contact</a></li>
+          </ul>
+        </div>
+        <!-- Contact Section -->
+        <div class="col-md-4">
+          <h5>Contact Us</h5>
+          <address>
+            <strong>Maruti Consultancy</strong><br>
+            401, Opera House, Behide Super Diamond Market, Mini Bazaar, Varachha Road, Surat, 395006<br>
+            <abbr title="Phone">Phone No: </abbr> <a href="https://wa.me/+919726599666">+91 9726599666</a><br>
+            <abbr title="Email">Email ID:</abbr> <a href="mailto:rudradhameliya007@gmail.com"
+              class="text-white">rudradhameliya007@gmail.com</a>
+          </address>
+        </div>
+      </div>
+      <div class="row mt-3">
+        <div class="col text-center">
+          <a href="https://www.facebook.com/yourpage" class="text-white me-2" target="_blank"
+            rel="noopener noreferrer"><i class="fab fa-facebook-f"></i></a>
+          <a href="https://twitter.com/yourprofile" class="text-white me-2" target="_blank" rel="noopener noreferrer"><i
+              class="fab fa-twitter"></i></a>
+          <a href="https://www.linkedin.com/in/yourprofile" class="text-white me-2" target="_blank"
+            rel="noopener noreferrer"><i class="fab fa-linkedin-in"></i></a>
+          <a href="https://www.instagram.com/yourprofile" class="text-white" target="_blank"
+            rel="noopener noreferrer"><i class="fab fa-instagram"></i></a>
+        </div>
+      </div>
+      <div class="row mt-3">
+        <div class="col text-center">
+          <p>&copy; 2024 Maruti Consultancy. All Rights Reserved.</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+
+  <!-- end -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  <script src="script.js"></script>
+  <script>
+    AOS.init();
+  </script>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</body>
+
+</html>
